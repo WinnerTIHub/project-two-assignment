@@ -1,0 +1,169 @@
+   * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #header {
+            position: fixed;
+            top: 50px;
+            padding: 10px;
+            background-color: blanchedalmond;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            color: #000000;
+        }
+
+        #header nav {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            padding: 10px 25px;
+        }
+
+        #header nav span {
+            font-weight: bold;
+        }
+
+        #header nav ul {
+            display: flex;
+            gap: 10px;
+            padding: 0px;
+            margin: 0;
+        }
+
+        #header nav li {
+            list-style: none;
+        }
+
+        #header nav li a {
+            text-decoration: none;
+            background-color: black;
+            padding: 5px 10px;
+            border-radius: 7px;
+            color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+            transition: background-color 0.2s ease;
+        }
+
+        #header nav li a:hover {
+            background-color: #333333;
+        }
+
+        .about-container {
+            margin-top: 160px;
+            margin-bottom: 60px;
+            width: 90%;
+            max-width: 950px;
+            background-color: #161616;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 24px;
+            padding: 50px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 45px;
+            align-items: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+        }
+
+        .profile-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-circle {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            border: 4px solid blanchedalmond;
+            box-shadow: 0 0 25px rgba(255, 235, 205, 0.25);
+        }
+
+        .about-content .badge {
+            display: inline-block;
+            background-color: blanchedalmond;
+            color: #000000;
+            font-size: 0.85rem;
+            font-weight: bold;
+            padding: 6px 14px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+        }
+
+        .about-content h1 {
+            font-size: 2.8rem;
+            margin: 0 0 16px 0;
+            letter-spacing: 1px;
+        }
+
+        .about-content p {
+            color: #cccccc;
+            line-height: 1.7;
+            font-size: 1.05rem;
+            margin: 0 0 24px 0;
+        }
+
+        /* Core Focus Tags */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 28px;
+        }
+
+        .skill-tag {
+            background-color: #000000;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 14px 28px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #222222;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 35px 25px;
+                margin-top: 140px;
+            }
+
+            .skills-grid {
+                justify-content: center;
+            }
+        }
