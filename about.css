@@ -14,6 +14,7 @@
             align-items: center;
         }
 
+        /* =================== Header Styling ================ */
         #header {
             position: fixed;
             top: 50px;
@@ -62,6 +63,10 @@
         #header nav li a:hover {
             background-color: #333333;
         }
+
+        /* ==========================================================
+                            MAIN BODY
+           ========================================================== */
 
         .about-container {
             margin-top: 160px;
@@ -120,8 +125,11 @@
             font-size: 1.05rem;
             margin: 0 0 24px 0;
         }
+  
+        /* =============================================================
+                            SKILLS GRID
+           ============================================================= */
 
-        /* Core Focus Tags */
         .skills-grid {
             display: flex;
             flex-wrap: wrap;
@@ -154,6 +162,10 @@
             background-color: #222222;
             transform: translateY(-2px);
         }
+
+        /* ================================================================
+                                  DEVICE SIZING
+          ================================================================= */
 
         @media (max-width: 768px) {
             .about-container {
